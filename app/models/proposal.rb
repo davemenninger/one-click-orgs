@@ -127,7 +127,7 @@ class Proposal < ActiveRecord::Base
     close_early_proposals
   end
   
-  scope :currently_open, lambda {where(["open = ? AND close_date > ?", true, Time.now.utc])}
+  scope :currently_open, lambda {where(["open = ? AND close_date > ?", 1, Time.now.utc])}
   
   scope :failed, lambda {where(["close_date < ? AND accepted = ?", Time.now.utc, false]).order('close_date DESC')}
   
