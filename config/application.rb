@@ -38,5 +38,8 @@ module OneClickOrgs
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # heroku complained about this, so i added it - DJM 11/02/2010
+    config.secret_token = "this is a passphrase that has at least thirty characters"
   end
 end
