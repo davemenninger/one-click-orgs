@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem "rails", "3.0.1"
+gem "rails", "4.2.0"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -37,7 +37,7 @@ gem "delayed_job", "2.0.3"
 
 group :test do
   gem "rspec-rails", "~>2.0.1"
-  gem "webrat", "~>0.7.1"
+  gem "webrat", "~> 0.7.1"
   gem "machinist", "~>1.0.6"
   gem "faker", '~>0.3.1'
   gem "rcov", "~>0.9.8"
